@@ -16,16 +16,16 @@
                 <div id="nav-bar">
                     <img class="nav-bar-icons" src="../Images/nav bar/WASPLab.png" alt="WASPLab logo"/>
                     <a href="../index.html"><img class="nav-bar-icons"src="../Images/nav bar/Home MCH.png" alt="Home MCH nav tile"/></a>
-                    <img class="nav-bar-icons" src="../Images/nav bar/Dashboard.png" alt="Dashboard nav tile"/>
+                    <img class="nav-bar-icons" src="../Images/nav bar/Dashboard.png" alt="Dashboard nav tile" style="opacity: 0.5;"/>
                     <a href="../Public/Pre-Screening.html"><img class="nav-bar-icons" src="../Images/nav bar/Screening.png" alt="Screening nav tile link"/></a>
-                    <img class="nav-bar-icons" src="../Images/nav bar/Reading Assignment.png" alt="Reading Assignment nav tile"/>
+                    <img class="nav-bar-icons" src="../Images/nav bar/Reading Assignment.png" alt="Reading Assignment nav tile" style="opacity: 0.5;"/>
                     <a href="../Public/Pre-Reading.html"><img class="nav-bar-icons" src="../Images/nav bar/Reading.png" alt="Reading nav tile link"/></a>
-                    <img class="nav-bar-icons" src="../Images/nav bar/Picking.png" alt="Picking nav tile"/>
-                    <img class="nav-bar-icons" src="../Images/nav bar/Unload Plates.png" alt="Unload Plates nav tile"/>
-                    <img class="nav-bar-icons" src="../Images/nav bar/Report.png" alt="Report nav tile"/>
-                    <img class="nav-bar-icons" src="../Images/nav bar/Plate Browser.png" alt="Plate Browser nav tile"/>
-                    <img class="nav-bar-icons" src="../Images/nav bar/About.png" alt="About nav tile"/>
-                    <img class="nav-bar-icons" src="../Images/nav bar/Logout.png" alt="Logout nav tile"/>
+                    <img class="nav-bar-icons" src="../Images/nav bar/Picking.png" alt="Picking nav tile" style="opacity: 0.5;"/>
+                    <img class="nav-bar-icons" src="../Images/nav bar/Unload Plates.png" alt="Unload Plates nav tile" style="opacity: 0.5;"/>
+                    <img class="nav-bar-icons" src="../Images/nav bar/Report.png" alt="Report nav tile" style="opacity: 0.5;"/>
+                    <img class="nav-bar-icons" src="../Images/nav bar/Plate Browser.png" alt="Plate Browser nav tile" style="opacity: 0.5;"/>
+                    <img class="nav-bar-icons" src="../Images/nav bar/About.png" alt="About nav tile" style="opacity: 0.5;"/>
+                    <img class="nav-bar-icons" src="../Images/nav bar/Logout.png" alt="Logout nav tile" style="opacity: 0.5;"/>
                 </div>                
             </div>
 
@@ -115,21 +115,23 @@
                                                             <div class="modal-dialog modal-dialog-scrollable modal-xl">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header" style="background-color: #00364B;>
-                                                                        <h5 class="PP" id="modalLongTitle" style="text-align: center; color: white;">PP Image Library</h5>
+                                                                        <h5 class="modal-title" id="modalLongTitle" style="text-align: center; color: white;">PP Image Library</h5>
                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                                     </div>
+
+
                                                                     <div class="modal-body">
-                                                                        <div class="container-fluid">
+                                                                        <div class="container-fluid p-0">
                                                                             <div class="row align-items-center" style="background-color: #B9B8B8; color: #00364B; border: 2px solid #00364B;">
                                                                                 <div class="col-1">ID</div>
                                                                                 <div class="col-10">Colony morphology</div>
                                                                                 <div class="col-1">AST Card</div>
                                                                             </div>
 
-                                                                            <div class="row" style="border-bottom: 5px solid white;">
+                                                                            <div class="row PP-library" style="border-bottom: 5px solid white;">
                                                                                 <div class="col-1 p-0" style="background-color: #00364B;">
                                                                                     <div class="row">
-                                                                                        <div class="col-12">Citrobacter spp.</div>
+                                                                                        <div class="col-12" id="pp-id">Citrobacter spp.</div>
                                                                                         <div class="col-12">
                                                                                             <img class="PP my-5" src="../Images/PP Library/Citrobacter bench.png">
                                                                                         </div>
@@ -153,23 +155,26 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="col-1" style="background-color: #00364B;">GN99</div> 
+                                                                                <div class="col-1" style="background-color: #00364B;">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12" id="AST-Card">GN99</div>
+                                                                                    </div>
+                                                                                </div> 
                                                                             </div>
 
 
 
-                                                                            <div class="row">
+                                                                            <div class="row PP-library">
                                                                                 <div class="col-1 p-0" style="background-color: #00364B;">
                                                                                     <div class="row">
-                                                                                        <div class="col-12" style="height: 160px;">E. coli</div>
-                                                                                        <div class="col-12" style="height: 425px;">Dark rose to pink color, medium to large colonies</div>
-                                                                                        <div class="col-12" style="height: 400px;">Pinpoint to small colonies, perform indole (or MALDI-
-                                                                                            TOF) test to confirm the ID.</div>
-                                                                                        <div class="col-12"></div>
+                                                                                        <div class="col-12" id="pp-id" style="height: 160px;">E. coli</div>
+                                                                                        <div class="col-12" style="height: 450px;">Dark rose to pink color, medium to large colonies</div>
+                                                                                        <div class="col-12" style="height: 475px;">Pinpoint to small colonies, perform indole (or MALDI-TOF) to confirm ID</div>
+                                                                                        <div class="col-12" style="height: 350px;">Mucoid colonies, perform indole (or MALDI-TOF) to confirm ID</div>
                                                                                     </div>
                                                                                 </div>
 
-                                                                                <div class="col-10" style="background-color: plum;">
+                                                                                <div class="col-10" style="background-color: #dda0dd;">
                                                                                     <div class="row py-2 px-0" style="border: 1px solid #00364B;">
                                                                                         <div class="col-6">
                                                                                             <img class="help-button" src="../Images/PP Library/E. coli_wl.png">
@@ -204,7 +209,12 @@
                                                                                     </div>
                                                                                 </div>
 
-                                                                                <div class="col-1" style="background-color: #00364B;">GN99</div> 
+                                                                                <div class="col-1" style="background-color: #00364B;">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12" id="AST-Card" style="height: 1400px;">GN99</div>
+                                                                                        <div class="col-12">Similar morphs can be mixed & set on one panel, rather than 2 independent panels. Clearly distinct morphologies (e.g. LF & NLF or mucoid & non-mucoid) should be set separately.</div>
+                                                                                    </div>
+                                                                                </div> 
 
                                                                             </div>
 
@@ -222,7 +232,7 @@
                                                             <div class="modal-dialog modal-lg">
                                                                 <div class="modal-content">
                                                                     <div class="modal-header" style="background-color: #00364B; color: white>
-                                                                        <h5 class="workup-criteria" id="modalHeaderTitle" style="text-align: center;">Criteria for ID and Susceptibility Testing</h5>
+                                                                        <h5 class="modal-dialog-centered" id="modalHeaderTitle" style="text-align: center;">Criteria for ID and Susceptibility Testing</h5>
                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                                     </div>
                                                                     <div class="modal-body">
@@ -234,7 +244,6 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                         <button type="button" class="btn btn-secondary" style="border: 2px solid #00364B;">Button</button>
                                                       </div>
                                                 </div>
