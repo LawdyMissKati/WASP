@@ -103,3 +103,17 @@ body {
 .action .btn {
     height: 50px;
 }
+
+.PP-library {
+    font-size: small;
+}
+
+#pp-id {
+    font-size: large;
+    color: #FF007F;
+}
+
+#AST-Card {
+    font-size: large;
+    color: orange;
+}
