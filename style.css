@@ -27,7 +27,7 @@ body {
 
 .teal {
     width: 100%;
-    background-color: rgb(14, 94, 95);
+    background-color: #0e5e5f;
 }
 
 .pink {
@@ -74,7 +74,7 @@ body {
 }
 
 #btn-panel {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #00000033;
     height: 170px;
     padding: 0;
     border: 1px solid black;
@@ -127,7 +127,7 @@ body {
 }
 
 #pp-id {
-    font-size: large;
+    font-size: medium;
     color: #FF007F;
 }
 
@@ -137,6 +137,6 @@ body {
 }
 
 .modal-header {
+    background-color: #00364B;
     color: white;
-    align-items: center;
 }
