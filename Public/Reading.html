@@ -62,7 +62,7 @@
                                                 <div class="modal fade" id="option1" tabindex="-1" aria-labelledby="option-1" aria-hidden="true">
                                                     <div class="modal-dialog modal-sm">
                                                         <div class="modal-content">
-                                                            <div class="modal-header" style="background-color: #00364B; color: white>
+                                                            <div class="modal-header">
                                                                 <h5 class="option-1" id="modalHeaderTitle">No Growth</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                             </div>
@@ -97,12 +97,13 @@
                                                 <div class="modal fade" id="option2" tabindex="-1" aria-labelledby="option-2" aria-hidden="true">
                                                     <div class="modal-dialog modal-sm">
                                                         <div class="modal-content">
-                                                            <div class="modal-header" style="background-color: #00364B; color: white>
+                                                            <div class="modal-header">
                                                                 <h5 class="option-2" id="modalHeaderTitle" style="color: white;">Further Investigation?</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <p>Further Investigation - NO Report</p>
+                                                                <p>To be used when digital image is unclear and a closer look at the physical plate is required.</p>
+                                                                <em>No result</em>
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -131,12 +132,13 @@
                                                 <div class="modal fade" id="option3" tabindex="-1" aria-labelledby="option-3" aria-hidden="true">
                                                     <div class="modal-dialog modal-sm">
                                                         <div class="modal-content">
-                                                            <div class="modal-header" style="background-color: #00364B; color: white>
+                                                            <div class="modal-header">
                                                                 <h5 class="option-3" id="modalHeaderTitle">Positive</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <p>Isolate Created - No Report (unless E. coli - Prelim)</p>
+                                                                <p>Isolate created in SOFT with MALDI and/or AST orders</p>
+                                                                <em>*No result</em><p>(Exception: <em>E. coli</em> will issue a preliminary result)</p>
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -165,13 +167,13 @@
                                                 <div class="modal fade" id="option4" tabindex="-1" aria-labelledby="option-4" aria-hidden="true">
                                                     <div class="modal-dialog modal-lg">
                                                         <div class="modal-content">
-                                                            <div class="modal-header" style="background-color: #00364B; color: white>
+                                                            <div class="modal-header">
                                                                 <h5 class="option-4" id="modalHeaderTitle">Mixed organisms’ recollection comment</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                             </div>
                                                             <div class="modal-body">
                                                                 <img src="../Images/Mixed comment.png" alt="mixed organisms' recollection comment">
-                                                                <p><em>Final Result</em></p>
+                                                                <em>Final Result</em>
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -181,11 +183,11 @@
                                                 </div>
                                             </div>
 
-                                            <!-- Option 5: Organism Present <10k, NFW -->
+                                            <!-- Option 5: Organism Present <10k, NFI -->
                                             <div class="col-11 pt-2" style="border-bottom: 1px solid plum;">
                                                 <div class="form-check" style="color: white; font-size: medium;">
                                                     <input type="checkbox" class="form-check-input" id="org_lt10k">
-                                                    <label class="form-check-label" for="org_lt10k">Organism Present &lt10k cfu/mL, No Further Workup</label> 
+                                                    <label class="form-check-label" for="org_lt10k">Organism Present &lt10k cfu/mL, Not Further Identified</label> 
                                                 </div>
                                             </div>
                                             <!-- info -->
@@ -198,15 +200,15 @@
                                                 </button>
                                                 <!-- info modal -->
                                                 <div class="modal fade" id="option5" tabindex="-1" aria-labelledby="option-5" aria-hidden="true">
-                                                    <div class="modal-dialog modal-sm">
+                                                    <div class="modal-dialog">
                                                         <div class="modal-content">
-                                                            <div class="modal-header" style="background-color: #00364B; color: white>
+                                                            <div class="modal-header">
                                                                 <h5 class="option-5" id="modalHeaderTitle">Organism Present, &lt10,000</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <p>“Organism Present” is ONLY appropriate to use when addressing one single PP at &lt10,000 or
-                                                                    otherwise directed by DOS.</p>
+                                                                <p>“Organism Present” is ONLY appropriate to use when addressing one single PP at &lt10,000 or otherwise directed by DOS.</p>
+                                                                <em>Final result</em>
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -235,13 +237,14 @@
                                                 <div class="modal fade" id="option6" tabindex="-1" aria-labelledby="option-6" aria-hidden="true">
                                                     <div class="modal-dialog modal-lg">
                                                         <div class="modal-content">
-                                                            <div class="modal-header" style="background-color: #00364B; color: white>
+                                                            <div class="modal-header">
                                                                 <h5 class="option-6" id="modalHeaderTitle">Light Growth of Normal Urogenital Microbiota - FINAL</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                             </div>
                                                             <div class="modal-body">
                                                                 <img src="../Images/NUM.png" alt="Light Growth of Normal Urogenital Microbiota (NUM)">
                                                             </div>
+                                                            <em>Final result</em>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                                             </div>
@@ -269,14 +272,15 @@
                                                 <div class="modal fade" id="option7" tabindex="-1" aria-labelledby="option-7" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
-                                                            <div class="modal-header" style="background-color: #00364B; color: white>
+                                                            <div class="modal-header">
                                                                 <h5 class="option-7" id="modalHeaderTitle">Mixed organisms, “quantitation”</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                             </div>
                                                             <div class="modal-body">
                                                                 <p>The purpose of “Mixed organisms” is to address two PP(s) in a culture with or without urogenital microbiota, ranging from 10,000 to 49,000 cfu/mL.</p>
-                                                                <p>This comment can also be used alongside a PP that is being worked up in specific scenario. </p>
+                                                                <p>This comment can also be used alongside a PP that is being worked up in a specific scenario. </p>
                                                                 <p>This comment should also be followed with “No further workup”.</p>
+                                                                <em>Final result</em>
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -305,14 +309,15 @@
                                                 <div class="modal fade" id="option8" tabindex="-1" aria-labelledby="option-8" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <div class="modal-content">
-                                                            <div class="modal-header" style="background-color: #00364B; color: white>
+                                                            <div class="modal-header">
                                                                 <h5 class="option-8" id="modalHeaderTitle">Mixed organisms, “quantitation”</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                             </div>
                                                             <div class="modal-body">
                                                                 <p>The purpose of “Mixed organisms” is to address two PP(s) in a culture with or without urogenital microbiota, ranging from 50,000 to 100,000 cfu/mL.</p>
-                                                                <p>This comment can also be used alongside a PP that is being worked up in specific scenario. </p>
+                                                                <p>This comment can also be used alongside a PP that is being worked up in a specific scenario. </p>
                                                                 <p>This comment should also be followed with “No further workup”.</p>
+                                                                <em>Final result</em>
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -341,12 +346,13 @@
                                                 <div class="modal fade" id="option9" tabindex="-1" aria-labelledby="option-9" aria-hidden="true">
                                                     <div class="modal-dialog modal-sm">
                                                         <div class="modal-content">
-                                                            <div class="modal-header" style="background-color: #00364B; color: white>
+                                                            <div class="modal-header">
                                                                 <h5 class="option-9" id="modalHeaderTitle">Microbial Growth</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <p>microbial growth</p>
+                                                                <p>Microbial growth</p>
+                                                                <em>Preliminary result</em>
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -373,14 +379,17 @@
                                                 </button>
                                                 <!-- info modal -->
                                                 <div class="modal fade" id="option10" tabindex="-1" aria-labelledby="Button Guide" aria-hidden="true">
-                                                    <div class="modal-dialog modal-sm">
+                                                    <div class="modal-dialog">
                                                         <div class="modal-content">
-                                                            <div class="modal-header" style="background-color: #00364B; color: white>
-                                                                <h5 class="Button Guide" id="modalHeaderTitle">Button options for URNS cultures:</h5>
+                                                            <div class="modal-header">
+                                                                <h5 class="Button Guide" id="modalHeaderTitle">Mixed Organisms &lt10k cfu/mL. No Further Workup</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                             </div>
                                                             <div class="modal-body">
-                                                                <p>mixed &lt10k - FINAL</p>
+                                                                <p>The purpose of “Mixed organisms” is to address two PP(s) in a culture with or without urogenital microbiota, &lt10,000 cfu/mL.</p>
+                                                                <p>This comment can also be used alongside a PP that is being worked up in a specific scenario. </p>
+                                                                <p>This comment should also be followed with “No further workup”.</p>
+                                                                <em>Final result</em>
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -394,7 +403,7 @@
                                 </div>
                             </div>
 
-                            <!-- Info container (help butons, select illumination) -->
+                            <!-- Info container (help butons, submit, select illumination) -->
                             <div class="tools" style="background-color: plum; width: 100%;">
                                 <div class="container">
                                     <div class="row">
@@ -406,14 +415,14 @@
                                                         <!-- PP Image Library -->
                                                         
                                                         <!-- Button -->
-                                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalLong" style="border: 2px solid #00364B;">PP Image Library</button>
+                                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#helpButton1" style="border: 2px solid #00364B;">PP Image Library</button>
                                                         <!-- Scrollable Modal -->
-                                                        <div class="modal fade" id="modalLong" tabindex="-1" aria-labelledby="PP Image Library" aria-hidden="true">
+                                                        <div class="modal fade" id="helpButton1" tabindex="-1" aria-labelledby="PP Image Library" aria-hidden="true">
                                                             <div class="modal-dialog modal-dialog-scrollable modal-xl">
                                                                 <div class="modal-content"> 
                                                                     <!-- Modal Header -->
-                                                                    <div class="modal-header" style="background-color: #00364B;>
-                                                                        <h5 class="modal-title" id="modalLongTitle" style="text-align: center; color: white;">PP Image Library</h5>
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="modalLongTitle">PP Image Library</h5>
                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                                     </div>
 
@@ -560,12 +569,12 @@
                                                     
                                                         <!-- ID & sensi criteria -->
                                                         <!-- button -->
-                                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalHeader" style="border: 2px solid #00364B; color:;">Criteria for ID and Susceptibility Testing</button>
+                                                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalHeader" style="border: 2px solid #00364B;">Criteria for ID and Susceptibility Testing</button>
                                                         <!-- modal -->
                                                         <div class="modal fade" id="modalHeader" tabindex="-1" aria-labelledby="Criteria for ID and Susceptibility Testing" aria-hidden="true">
                                                             <div class="modal-dialog modal-lg">
                                                                 <div class="modal-content">
-                                                                    <div class="modal-header" style="background-color: #00364B; color: white;>
+                                                                    <div class="modal-header">
                                                                         <h5 class="PP" id="modalHeaderTitle" style="text-align: center; color: white;">Criteria for ID and Susceptibility Testing</h5>
                                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                                     </div>
