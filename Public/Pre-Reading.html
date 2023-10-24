@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Reading</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css"/>
+</head>
+
+<body onload="alert('Cultures that were Sent to Reader in the Screening page populate in the Reading page');">
+    <div class="container outer" style="height: 100%">
+        <div class="row justify-content-center">'
+            <!-- Nav Bar -->
+            <div class="col-1 p-0">
+                <div id="nav-bar">
+                    <img class="nav-bar-icons" src="../Images/nav bar/WASPLab.png" alt="WASPLab logo"/>
+                    <a href="../index.html"><img class="nav-bar-icons"src="../Images/nav bar/Home MCH.png" alt="Home MCH nav tile"/></a>
+                    <img class="nav-bar-icons" src="../Images/nav bar/Dashboard.png" alt="Dashboard nav tile" style="opacity: 0.5;"/>
+                    <a href="../Public/Pre-Screening.html"><img class="nav-bar-icons" src="../Images/nav bar/Screening.png" alt="Screening nav tile link"/></a>
+                    <img class="nav-bar-icons" src="../Images/nav bar/Reading Assignment.png" alt="Reading Assignment nav tile" style="opacity: 0.5;"/>
+                    <a href="Pre-Reading.html"><img class="nav-bar-icons" id="reading-tile" src="../Images/nav bar/Reading.png" alt="Reading nav tile link"/></a>
+                        <div class="noti_bubble" id="screening-notify" style="display: block; top: 552px;">6</div>  <!-- culture notice bubble -->
+                    <img class="nav-bar-icons" src="../Images/nav bar/Picking.png" alt="Picking nav tile" style="opacity: 0.5;"/>
+                    <img class="nav-bar-icons" src="../Images/nav bar/Unload Plates.png" alt="Unload Plates nav tile" style="opacity: 0.5;"/>
+                    <img class="nav-bar-icons" src="../Images/nav bar/Report.png" alt="Report nav tile" style="opacity: 0.5;"/>
+                    <img class="nav-bar-icons" src="../Images/nav bar/Plate Browser.png" alt="Plate Browser nav tile" style="opacity: 0.5;"/>
+                    <img class="nav-bar-icons" src="../Images/nav bar/About.png" alt="About nav tile" style="opacity: 0.5;"/>
+                    <img class="nav-bar-icons" src="../Images/nav bar/Logout.png" alt="Logout nav tile" style="opacity: 0.5;"/>
+                </div>                
+            </div>
+
+            <!-- Pre-Reading card -->
+            <div class="col-8 p-0" style="background-color: #B9B8B8;">
+                <div class="container inner">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="card mt-2">
+                                <!-- Header -->
+                                <div class="card-header" style="background-color: plum; color: #00364B; border-bottom: 1px solid black;">Pre-Reading</div>
+                                <!-- Body -->
+                                <div class="card-body pb-5" style="background-color: #00364B;">
+                                    <div class="container">
+                                        <!-- Search Input -->
+                                        <div class="row g-3 align-items-center">
+                                            <div class="col-auto">
+                                                <label for="search" class="col-form-label" style="color: white;">Search</label>
+                                            </div>
+                                            <div class="col-auto">
+                                                <input type="search" class="form-control form-control-sm" placeholder="Plate ID" id="search" style="border: 3px solid plum;"
+                                                aria-describedby="Search">
+                                            </div>
+                                        </div>
+                                        <!-- Column Headers -->
+                                        <div class="row my-3 p-1 align-items-center" style="background-color: #D9D9D9; color: #00364B; border: 1px solid black;">
+                                            <div class="col-3 p-0" style="font-size: x-small;">Test ID</div>
+                                            <div class="col-3" style="font-size: x-small;">Source</div>
+                                            <div class="col-4" style="font-size: x-small;">Barcode</div>
+                                            <div class="col-2 p-0" style="font-size: x-small;">Start Reading</div>
+                                        </div>
+                                     
+                                        <!-- Sample J000000001 -->
+                                        <div class="row mt-3 py-1 align-items-center" style="font-size: small; background-color: #EFEFEF; color: #00364B; border: 1px solid black">
+                                            <div class="col-3 px-1">URNS</div>
+                                            <div class="col-3">UMID</div>
+                                            <div class="col-4">J000000001</div>
+                                            <div class="col-1 px-0">
+                                                <a href="../Public/Reading.html"><button type="button" class="btn btn-secondary btn-sm" style="background-color: #00364B;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16"><path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path></svg>
+                                                </button></a>
+                                            </div>                                            
+                                        </div>
+
+                                        <!-- Sanmple J000000002 -->
+                                        <div class="row py-1 align-items-center" style="font-size: small; background-color: #EFEFEF; color: #00364B; border: 1px solid black">
+                                            <div class="col-3 px-1">URNS</div>
+                                            <div class="col-3">UMID</div>
+                                            <div class="col-4">J000000002</div>
+                                            <div class="col-1 px-0">
+                                                <button type="button" class="btn btn-secondary btn-sm" style="background-color: #00364B;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16"><path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path></svg>
+                                                </button>
+                                            </div>                                            
+                                        </div>
+
+                                        <!-- Sample J000000003 -->
+                                        <div class="row py-1 align-items-center" style="font-size: small; background-color: #EFEFEF; color: #00364B; border: 1px solid black">
+                                            <div class="col-3 px-1">URNS</div>
+                                            <div class="col-3">UMID</div>
+                                            <div class="col-4">J000000003</div>
+                                            <div class="col-1 px-0">
+                                                <button type="button" class="btn btn-secondary btn-sm" style="background-color: #00364B;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16"><path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path></svg>
+                                                </button>
+                                            </div>                                            
+                                        </div>
+
+                                        <!-- Sample J000000004 -->
+                                        <div class="row py-1 align-items-center" style="font-size: small; background-color: #EFEFEF; color: #00364B; border: 1px solid black">
+                                            <div class="col-3 px-1">URNS</div>
+                                            <div class="col-3">UMID</div>
+                                            <div class="col-4">J000000004</div>
+                                            <div class="col-1 px-0">
+                                                <button type="button" class="btn btn-secondary btn-sm" style="background-color: #00364B;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16"><path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path></svg>
+                                                </button>
+                                            </div>                                            
+                                        </div>
+
+                                        <!-- Sample J000000006 -->
+                                        <div class="row py-1 align-items-center" style="font-size: small; background-color: #EFEFEF; color: #00364B; border: 1px solid black">
+                                            <div class="col-3 px-1">URNS</div>
+                                            <div class="col-3">UMID</div>
+                                            <div class="col-4">J000000006</div>
+                                            <div class="col-1 px-0">
+                                                <button type="button" class="btn btn-secondary btn-sm" style="background-color: #00364B;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16"><path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path></svg>
+                                                </button>
+                                            </div>                                            
+                                        </div>
+
+                                        <!-- Sample J000000007 -->
+                                        <div class="row py-1 align-items-center" style="font-size: small; background-color: #EFEFEF; color: #00364B; border: 1px solid black">
+                                            <div class="col-3 px-1">URNS</div>
+                                            <div class="col-3">UMID</div>
+                                            <div class="col-4">J000000007</div>
+                                            <div class="col-1 px-0">
+                                                <button type="button" class="btn btn-secondary btn-sm" style="background-color: #00364B;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16"><path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path></svg>
+                                                </button>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../index.js"></script>
+
+</body>
+
+</html>
+
+/Users/katischwartz/Desktop/VS-Web Dev Projects/WASPLab web app/Images/nav bar
