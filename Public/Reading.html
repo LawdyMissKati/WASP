@@ -24,8 +24,8 @@
                     <img class="nav-bar-icons" src="../Images/nav bar/Dashboard.png" alt="Dashboard nav tile" style="opacity: 0.5;"/>
                     <a href="../Public/Pre-Screening.html"><img class="nav-bar-icons" src="../Images/nav bar/Screening.png" alt="Screening nav tile link"/></a>
                     <img class="nav-bar-icons" src="../Images/nav bar/Reading Assignment.png" alt="Reading Assignment nav tile" style="opacity: 0.5;"/>
-                    <a href="../Public/Pre-Reading.html"><img class="nav-bar-icons" id="reading-tile" src="../Images/nav bar/Reading.png" alt="Reading nav tile link"/></a>
-                        <div class="noti_bubble" id="screening-notify" style="display: block; top: 552px;">6</div>  <!-- culture notice bubble -->
+                    <a class="position-relative" href="../Public/Pre-Reading.html"><img class="nav-bar-icons" id="reading_tile" src="../Images/nav bar/Reading.png" alt="Reading nav tile link"/>
+                        <span class="top-0 start-100 translate-middle badge">6</span></a>
                     <img class="nav-bar-icons" src="../Images/nav bar/Picking.png" alt="Picking nav tile" style="opacity: 0.5;"/>
                     <img class="nav-bar-icons" src="../Images/nav bar/Unload Plates.png" alt="Unload Plates nav tile" style="opacity: 0.5;"/>
                     <img class="nav-bar-icons" src="../Images/nav bar/Report.png" alt="Report nav tile" style="opacity: 0.5;"/>
@@ -49,8 +49,8 @@
                                             <!-- Option 1: No Growth -->
                                             <div class="col-11 pt-4" style="border-bottom: 1px solid plum;">
                                                 <div class="form-check opt1" style="color: white; font-size: medium;">
-                                                    <input type="checkbox" class="form-check-input" id="NG">
-                                                    <label class="form-check-label" for="NG">No Growth</label> 
+                                                    <input type="radio" class="form-check-input" name="resulting_options" id="resulting_opt1" autocomplete="off">
+                                                    <label class="form-check-label" for="resulting_opt1">No Growth</label> 
                                                 </div>
                                             </div>
                                             <!-- info -->
@@ -83,9 +83,9 @@
                                             
                                             <!-- Option 2: Further Investigation? -->
                                             <div class="col-11 pt-2" style="border-bottom: 1px solid plum;">
-                                                <div class="form-check" style="color: white; font-size: medium;">
-                                                    <input type="checkbox" class="form-check-input" id="FI">
-                                                    <label class="form-check-label" for="FI">Further Investigation?</label> 
+                                                <div class="form-check" style="color: white; font-size: medium;">                                                    
+                                                    <input type="radio" class="form-check-input" name="resulting_options" id="resulting_opt2" autocomplete="off">
+                                                    <label class="form-check-label" for="resulting_opt2">Further Investigation?</label> 
                                                 </div>
                                             </div>
                                             <!-- info -->
@@ -119,8 +119,8 @@
                                             <!-- Option 3: Positive -->
                                             <div class="col-11 pt-2" style="border-bottom: 1px solid plum;">
                                                 <div class="form-check" style="color: white; font-size: medium;">
-                                                    <input type="checkbox" class="form-check-input" id="POS">
-                                                    <label class="form-check-label" for="POS">Positive</label> 
+                                                    <input type="radio" class="form-check-input" name="resulting_options" id="resulting_opt2" autocomplete="off">
+                                                    <label class="form-check-label" for="resulting_opt3">Positive</label> 
                                                 </div>
                                             </div>
                                             <!-- info -->
@@ -154,8 +154,8 @@
                                             <!-- Option 4: Mixed Culture >=3  Organisms -->
                                             <div class="col-11 pt-2" style="border-bottom: 1px solid plum;">
                                                 <div class="form-check" style="color: white; font-size: medium;">
-                                                    <input type="checkbox" class="form-check-input" id="mixed_gt3">
-                                                    <label class="form-check-label" for="mixed_gt3">Mixed Culture &gt= 3 Organisms</label> 
+                                                    <input type="radio" class="form-check-input" name="resulting_options" id="resulting_opt4" autocomplete="off">
+                                                    <label class="form-check-label" for="resulting_opt4">Mixed Culture &gt= 3 Organisms</label> 
                                                 </div>
                                             </div>
                                             <!-- info -->
@@ -171,7 +171,7 @@
                                                     <div class="modal-dialog modal-lg">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h5 class="option-4" id="modalHeaderTitle">Mixed organisms’ recollection comment</h5>
+                                                                <h5 class="option-4" id="modalHeaderTitle">Mixed organisms recollection comment</h5>
                                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                                                             </div>
                                                             <div class="modal-body">
@@ -189,8 +189,8 @@
                                             <!-- Option 5: Organism Present <10k, NFI -->
                                             <div class="col-11 pt-2" style="border-bottom: 1px solid plum;">
                                                 <div class="form-check" style="color: white; font-size: medium;">
-                                                    <input type="checkbox" class="form-check-input" id="org_lt10k">
-                                                    <label class="form-check-label" for="org_lt10k">Organism Present &lt10k cfu/mL, Not Further Identified</label> 
+                                                    <input type="radio" class="form-check-input" name="resulting_options" id="resulting_opt5" autocomplete="off">
+                                                    <label class="form-check-label" for="resulting_opt5">Organism Present &lt10k cfu/mL, Not Further Identified</label> 
                                                 </div>
                                             </div>
                                             <!-- info -->
@@ -224,8 +224,8 @@
                                             <!-- Option 6: NUM -->
                                             <div class="col-11 pt-2" style="border-bottom: 1px solid plum;">
                                                 <div class="form-check" style="color: white; font-size: medium;">
-                                                    <input type="checkbox" class="form-check-input" id="NUM">
-                                                    <label class="form-check-label" for="NUM">Light Growth of Normal Urogenital Microbiota - FINAL</label> 
+                                                    <input type="radio" class="form-check-input" name="resulting_options" id="resulting_opt6" autocomplete="off">
+                                                    <label class="form-check-label" for="resulting_opt6">Light Growth of Normal Urogenital Microbiota - FINAL</label> 
                                                 </div>
                                             </div>
                                             <!-- info -->
@@ -259,8 +259,8 @@
                                             <!-- Option 7: Mixed 10-49k, NFW -->
                                             <div class="col-11 pt-2" style="border-bottom: 1px solid plum;">
                                                 <div class="form-check" style="color: white; font-size: medium;">
-                                                    <input type="checkbox" class="form-check-input" id="mixed_10-49k">
-                                                    <label class="form-check-label" for="mixed_10-49k">Mixed Organisms 10 - 49k cfu/mL, No Further Workup</label> 
+                                                    <input type="radio" class="form-check-input" name="resulting_options" id="resulting_opt7" autocomplete="off">
+                                                    <label class="form-check-label" for="resulting_opt7">Mixed Organisms 10 - 49k cfu/mL, No Further Workup</label> 
                                                 </div>
                                             </div>
                                             <!-- info -->
@@ -296,8 +296,8 @@
                                             <!-- Option-8: Mixded 50-100k, NFW -->
                                             <div class="col-11 pt-2" style="border-bottom: 1px solid plum;">
                                                 <div class="form-check" style="color: white; font-size: medium;">
-                                                    <input type="checkbox" class="form-check-input" id="mixed_50-100k">
-                                                    <label class="form-check-label" for="mixed_50-100k">Mixed Organisms 50 - 100k cfu/mL, No Further Workup</label> 
+                                                    <input type="radio" class="form-check-input" name="resulting_options" id="resulting_opt8" autocomplete="off">
+                                                    <label class="form-check-label" for="resulting_opt8">Mixed Organisms 50 - 100k cfu/mL, No Further Workup</label> 
                                                 </div>
                                             </div>
                                             <!-- info -->
@@ -333,8 +333,8 @@
                                             <!-- Option 9: Microbial Growth - Prelim -->
                                             <div class="col-11 pt-2" style="border-bottom: 1px solid plum;">
                                                 <div class="form-check" style="color: white; font-size: medium;">
-                                                    <input type="checkbox" class="form-check-input" id="growth">
-                                                    <label class="form-check-label" for="growth">Microbial Growth</label> 
+                                                    <input type="radio" class="form-check-input" name="resulting_options" id="resulting_opt9" autocomplete="off">
+                                                    <label class="form-check-label" for="resulting_opt9">Microbial Growth</label> 
                                                 </div>
                                             </div>
                                             <!-- info -->
@@ -368,8 +368,8 @@
                                             <!-- Option 10: Mixed <10k. NFW -->
                                             <div class="col-11 pt-2" style="border-bottom: 1px solid plum;">
                                                 <div class="form-check" style="color: white; font-size: medium;">
-                                                    <input type="checkbox" class="form-check-input" id="mixed_lt10k">
-                                                    <label class="form-check-label" for="mixed_lt10k">Mixed Organisms &lt10k cfu/mL. No Further Workup</label> 
+                                                    <input type="radio" class="form-check-input" name="resulting_options" id="resulting_opt10" autocomplete="off">
+                                                    <label class="form-check-label" for="resulting_opt10">Mixed Organisms &lt10k cfu/mL. No Further Workup</label> 
                                                 </div>
                                             </div>
                                             <!-- info -->
@@ -448,7 +448,7 @@
                                                                                         <div class="col-12"><img class="PP" src="../Images/PP Library/Citrobacter bench.png"></div>
                                                                                         <div class="col-12">colonies were more purple than they appeared on the web app images to the right</div>
                                                                                         <div class="col-12">Lesson: always physically look at your plates, particularly cultures reported as E. coli from the WASP web app</div>
-                                                                                        <div class="col-12" id="spp-id" style="margin-top: 150px;"><em>C. koseri</em></div>
+                                                                                        <div class="col-12" id="spp-id" style="margin-top: 200px;"><em>C. koseri</em></div>
                                                                                     </div>
                                                                                 </div>
                                                                                 <!-- Images -->
@@ -529,7 +529,7 @@
                                                                                 <div class="col-1 sensi" style="background-color: #00364B;">
                                                                                     <div class="row">
                                                                                         <div class="col-12" id="AST-Card" style="height: 1400px;">GN99</div>
-                                                                                        <div class="col-12">Similar morphs can be mixed & set on one panel, rather than 2 independent panels. Clearly distinct morphologies (e.g. LF & NLF or mucoid & non-mucoid) should be set separately.</div>
+                                                                                        <div class="col-12">Similar morphs can be mixed & set on one panel, rather than 2 independent panels. Clearly distinct morphologies (e.g. mucoid & non-mucoid) should be set separately.</div>
                                                                                     </div>
                                                                                 </div> 
                                                                             </div>
@@ -542,11 +542,19 @@
                                                                                         <div class="col-12" id="pp-id"><em>Enterobacter spp.</em></div>
                                                                                     </div>
                                                                                     <div class="row">
-                                                                                        <div class="col-12" id="spp-id" style="margin-top: 130px;"><em>E. cloacae complex</em></div>
+                                                                                        <div class="col-12" id="spp-id" style="margin-top: 390px;"><em>E. cloacae complex</em></div>
                                                                                     </div>
                                                                                 </div>
                                                                                 <!-- Images -->
                                                                                 <div class="col-10" style="background-color: plum;">
+                                                                                    <div class="row py-2" style="border: 1px solid #00364B;">
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/E. cloacae cmplx mucoid_wl.png">
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/E. cloacae cmplx mucoid_bl.png">
+                                                                                        </div>
+                                                                                    </div>
                                                                                     <div class="row py-2" style="border: 1px solid #00364B;">
                                                                                         <div class="col-6">
                                                                                             <img class="help-button" src="../Images/PP Library/E. cloacae cmplx_wl.png">
@@ -562,7 +570,7 @@
                                                                                         <div class="col-12" id="AST-Card">GN99</div>
                                                                                     </div>
                                                                                     <div class="row">
-                                                                                        <div class="col-12" id="additionalSensiTesting" style="margin-top: 150px;">disc: Ceftriaxone (CRO)</div>
+                                                                                        <div class="col-12" id="additionalSensiTesting" style="margin-top: 403px;">disc: Ceftriaxone (CRO)</div>
                                                                                     </div>
                                                                                 </div> 
                                                                             </div>
@@ -615,6 +623,38 @@
                                                                                     </div>
                                                                                 </div> 
                                                                             </div>
+                                                                            
+                                                                            <!-- Morganella morganii -->
+                                                                            <div class="row PP-library" style="border-bottom: 5px solid white;">
+                                                                                <!-- ID -->
+                                                                                <div class="col-1 ID" style="background-color: #00364B;">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12" id="pp-id"><em>Morganella morganii</em></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                          
+                                                                                <!-- Images -->
+                                                                                <div class="col-10" style="background-color: plum;">
+                                                                                    <div class="row py-2" style="border: 1px solid #00364B;">
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/M. morganii-wl.png">
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/M. morganii-bl.png">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                                <!-- Sensi Notes -->
+                                                                                <div class="col-1 sensi" style="background-color: #00364B;">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12" id="AST-Card">GN99</div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-12" id="additionalSensiTesting" style="margin-top: 150px;">disc: Ceftriaxone (CRO)</div>
+                                                                                    </div>                                                                           
+                                                                                </div> 
+                                                                            </div>
 
                                                                             <!-- Proteus spp -->
                                                                             <div class="row PP-library" style="border-bottom: 5px solid white;">
@@ -623,6 +663,7 @@
                                                                                     <div class="row">
                                                                                         <div class="col-12" id="pp-id"><em>Proteus spp.</em></div>
                                                                                         <div class="col-12" id="spp-id" style="margin-top: 175px;"><em>P. mirabilis</em></div>
+                                                                                        <div class="col-12" id="spp-id" style="margin-top: 425px;"><em>P. vulgaris</em></div>
                                                                                     </div>
                                                                                 </div>
                                                                                 <!-- Images -->
@@ -635,7 +676,16 @@
                                                                                             <img class="help-button" src="../Images/PP Library/P. mir_bl.png">
                                                                                         </div>
                                                                                     </div>
+                                                                                    <div class="row py-2" style="border: 1px solid #00364B;">
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/P. vulgaris_wl.png">
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/P. vulgaris_bl.png">
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
+                                                                                
                                                                                 <!-- Sensi Notes -->
                                                                                 <div class="col-1 sensi" style="background-color: #00364B;">
                                                                                     <div class="row">
@@ -643,6 +693,7 @@
                                                                                     </div>
                                                                                     <div class="row">
                                                                                         <div class="col-12" style="margin-top: 160px;">whole purity plate</div>
+                                                                                        <div class="col-12" id="additionalSensiTesting" style="margin-top: 425px;">disc: Ceftriaxone (CRO)</div>
                                                                                     </div>                                                                           
                                                                                 </div> 
                                                                             </div>
@@ -726,18 +777,18 @@
                                                                                 <div class="col-10" style="background-color: plum;">
                                                                                     <div class="row py-2" style="border: 1px solid #00364B;">
                                                                                         <div class="col-6">
-                                                                                            <img class="help-button" src="../Images/PP Library/PAER_wl.png">
+                                                                                            <img class="help-button" src="../Images/PP Library/PAER classic_wl.png">
                                                                                         </div>
                                                                                         <div class="col-6">
-                                                                                            <img class="help-button" src="../Images/PP Library/PAER_bl.png">
+                                                                                            <img class="help-button" src="../Images/PP Library/PAER classic_bl.png">
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="row py-2" style="border: 1px solid #00364B;">
                                                                                         <div class="col-6">
-                                                                                            <img class="help-button" src="../Images/PP Library/PAER-2morphs_wl.png">
+                                                                                            <img class="help-button" src="../Images/PP Library/PAER_wl.png">
                                                                                         </div>
                                                                                         <div class="col-6">
-                                                                                            <img class="help-button" src="../Images/PP Library/PAER-2morphs_bl.png">
+                                                                                            <img class="help-button" src="../Images/PP Library/PAER_bl.png">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -745,6 +796,45 @@
                                                                                 <div class="col-1 sensi" style="background-color: #00364B;">
                                                                                     <div class="row">
                                                                                         <div class="col-12" id="AST-Card">N801</div>
+                                                                                    </div> 
+                                                                                </div> 
+                                                                            </div>
+
+                                                                            <!-- Enterococcus spp -->
+                                                                            <div class="row PP-library" style="border-bottom: 5px solid white;">
+                                                                                <!-- ID -->
+                                                                                <div class="col-1 ID" style="background-color: #00364B;">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12" id="pp-id"><em>Enterococcus spp</em></div>
+                                                                                        <div class="col-12" id="pp-id" style="margin-top: 150px;"><em>E. faecalis</em></div>
+                                                                                        <div class="col-12" id="pp-id" style="margin-top: 450px;"><em>E. faecium</em></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- Images -->
+                                                                                <div class="col-10" style="background-color: plum;">
+                                                                                    <div class="row py-2" style="border: 1px solid #00364B;">
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/E. faecalis_wl.png">
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/E. faecalis_bl.png">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row py-2" style="border: 1px solid #00364B;">
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/E. faecium_wl.png">
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/E. faecium_bl.png">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- Sensi Notes -->
+                                                                                <div class="col-1 sensi" style="background-color: #00364B;">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12" id="AST-Card">GP75</div>
+                                                                                        <div class="col-12" id="additionalSensiTesting" style="margin-top: 155px;">Beta-Lactamase</div>
+                                                                                        <div class="col-12" id="additionalSensiTesting" style="margin-top: 440px;">Send to MML for Daptomycin Susceptibility</div>
                                                                                     </div> 
                                                                                 </div> 
                                                                             </div>
@@ -764,7 +854,7 @@
                                                                                             <img class="help-button" src="../Images/PP Library/S. aureus_wl.png">
                                                                                         </div>
                                                                                         <div class="col-6">
-                                                                                            <img class="help-button" src="../Images/PP Library/S. aureus_wl.png">
+                                                                                            <img class="help-button" src="../Images/PP Library/S. aureus_bl.png">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -772,13 +862,103 @@
                                                                                 <div class="col-1 sensi" style="background-color: #00364B;">
                                                                                     <div class="row">
                                                                                         <div class="col-12" id="AST-Card">GP75</div>
-                                                                                        <div class="col-12" id="additionalSensiTesting" style="margin-top: 150px;">If inpatient, perform beta-lactamase</div>
+                                                                                        <div class="col-12" id="additionalSensiTesting" style="margin-top: 150px;">If inpatient, perform PBP2a Testing</div>
                                                                                     </div> 
                                                                                 </div> 
                                                                             </div>
 
+                                                                             <!-- Coag Neg Staph -->
+                                                                             <div class="row PP-library" style="border-bottom: 5px solid white;">
+                                                                                <!-- ID -->
+                                                                                <div class="col-1 ID" style="background-color: #00364B;">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12" id="pp-id">Coag Neg <em>staph</em></div>
+                                                                                        <div class="col-12" id="spp-id" style="margin-top: 150px;"><em>S. saprophyticus</em></div>
+                                                                                        <div class="col-12" id="spp-id" style="margin-top: 440px;"><em>S. capitis</em></div>
+                                                                                        <div class="col-12" id="spp-id" style="margin-top: 425px;"><em>S. epidermidis</em></div>
+                                                                                        <div class="col-12" id="spp-id" style="margin-top: 425px;"><em>S. haemolyticus</em></div>
+                                                                                        <div class="col-12" id="spp-id" style="margin-top: 425px;"><em>S. hominis</em></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- Images -->
+                                                                                <div class="col-10" style="background-color: plum;">
+                                                                                    <div class="row py-2" style="border: 1px solid #00364B;">
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/S. sapro_wl.png">
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/S. sapro_bl.png">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row py-2" style="border: 1px solid #00364B;">
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/S. capitis_wl.png">
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/S. capitis_bl.png">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row py-2" style="border: 1px solid #00364B;">
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/S. epi_wl.png">
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/S. epi_bl.png">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row py-2" style="border: 1px solid #00364B;">
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/Staph haemolyticus-wl.png">
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/Staph haemolyticus-bl.png">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row py-2" style="border: 1px solid #00364B;">
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/Staph hominis_wl.png">
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/Staph hominis_bl.png">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- Sensi Notes -->
+                                                                                <div class="col-1 sensi" style="background-color: #00364B;">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12" id="AST-Card">GP75</div>
+                                                                                        <div class="col-12" style="margin-top: 20px;">Sensi when ≥100,000 pure growth or with minimal mixed flora</div>
+                                                                                        <div class="col-12" style="margin-top: 20px;">Otherwise, <span style="color: aqua;">SNI</span></div>
+                                                                                    </div> 
+                                                                                </div> 
+                                                                            </div>
 
-
+                                                                            <!-- S. agalactiae -->
+                                                                            <div class="row PP-library" style="border-bottom: 5px solid white;">
+                                                                                <!-- ID -->
+                                                                                <div class="col-1 ID" style="background-color: #00364B;">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12" id="pp-id"><em>S. agalactiae</em></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- Images -->
+                                                                                <div class="col-10" style="background-color: plum;">
+                                                                                    <div class="row py-2" style="border: 1px solid #00364B;">
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/S. agalactiae_wl.png">
+                                                                                        </div>
+                                                                                        <div class="col-6">
+                                                                                            <img class="help-button" src="../Images/PP Library/S. agalactiae_bl.png">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!-- Sensi Notes -->
+                                                                                <div class="col-1 sensi" style="background-color: #00364B;">
+                                                                                    <div class="row">
+                                                                                        <div class="col-12" id="isolateComments">SNI</div>
+                                                                                    </div> 
+                                                                                </div> 
+                                                                            </div>
 
                                                                         </div>
                                                                     </div>
@@ -845,20 +1025,21 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <!-- plate image -->
-                            <div class="greyBox" id="targetElement" style="background-color: #B9B8B8; width: 100%;">
+                            <div class="greyBox" style="background-color: #B9B8B8; width: 100%;">
                                 <img class="pic" id="lighting" src="../Images/plates/E. faecium_wl.png">
-                                <div class="context-menu">
+                                <div class="context-menu" draggable="true">
                                     <!-- New Pickpoint button -->
                                     <button class="btn btn-secondary btn-sm" id="pickpointBtn" type="button" data-bs-toggle="modal" data-bs-target="#newPickpoint" style="background-color: #434343;">New Pickpoint</button>
                                     <!-- circle around selected colony -->
-                                    <div class="circle ui-draggable" id="circle">
+                                    <div class="circle ui-draggable" id="circle" draggable="true">
                                         <div class="info-box" id="pickpointSummary"></div>
                                     </div>
                                 </div>
                                 
                                 <!-- New Pickpoint modal -->
-                                <div class="modal" id="modal-pickpoint" aria-labelledby="New Pickpoint" aria-hidden="true">
+                                <div class="modal" id="modal-pickpoint" aria-labelledby="New Pickpoint" aria-hidden="true" draggable="true">
                                     <div class="modal-dialog modal-pickpoint">
                                         <div class="modal-content">
 
@@ -942,42 +1123,35 @@
                                                                     </div>
 
                                                                     <!-- Select Workup -->
-                                                                    <div class="workup_test">
-                                                                        <ul id="test_selection_buttons btn-panel">
-                                                                            <li><button class="button btn-test">
-                                                                                <input type="radio" class="test_button" name="test_button" value="MALDI and N801 (General)">
-                                                                                <label for="MALDI_N801" class="button workup">MALDI and N801 (General)</label>
-                                                                            </button></li>
-                                                                            <li><button class="button btn-test">
-                                                                                <input type="radio" class="test_button" name="test_button" value="MALDI and ST02 (General)">
-                                                                                <label for="MALDI_ST02" class="button workup">MALDI and ST02 (General)</label>
-                                                                            </button></li>
-                                                                            <li><button class="button btn-test">
-                                                                                <input type="radio" class="test_button" name="test_button" value="MIC - N801 (General)">
-                                                                                <label for="N801" class="button workup">MIC - N801 (General)</label>
-                                                                            </button></li>
-                                                                            <li><button class="button btn-test">
-                                                                                <input type="radio" class="test_button" name="test_button" value="MIC - GP75 (General)">
-                                                                                <label for="GP75" class="button workup">MIC - GP75 (General)</label>
-                                                                            </button></li>
-                                                                            <li><button class="button btn-test">
-                                                                                <input type="radio" class="test_button" name="test_button" value="MIC - GN99 (General)">
-                                                                                <label for="GN99" class="button workup">MIC - GN99 (General)</label>
-                                                                            </button></li>
-                                                                            <li><button class="button btn-test">
-                                                                                <input type="radio" class="test_button" name="test_button" value="MIC - N801 (General)">
-                                                                                <label for="N801" class="button workup">MIC - N801 (General)</label>
-                                                                            </button></li>
-                                                                            <li><button class="button btn-test">
-                                                                                <input type="radio" class="test_button" name="test_button" value="MALDI and GN99 (General)">
-                                                                                <label for="MALDI_GN99" class="button workup">MALDI and GN99 (General)</label>
-                                                                            </button></li>
-                                                                            <li><button class="button btn-test">
-                                                                                <input type="radio" class="test_button" name="test_button" value="MALDI and GP75 (General)">
-                                                                                <label for="MALDI_GP75" class="button workup">MALDI and GP75 (General)</label>
-                                                                            </button></li>
-                                                                            
-                                                                        </ul>
+                                                                    <div id="workup_selection">
+
+                                                                        <input type="radio" class="btn-check workups" name="workup_options" id="workup_opt1" value="MALDI and N801 (General)" autocomplete="off">
+                                                                        <label class="btn btn-secondary" for="workup_opt1">MALDI and N801 (General)</label>
+                                                                        
+                                                                        <input type="radio" class="btn-check workups" name="workup_options" id="workup_opt2" value="MALDI and ST02 (General)" autocomplete="off">
+                                                                        <label class="btn btn-secondary" for="workup_opt2">MALDI and ST02 (General)</label>
+
+                                                                        <input type="radio" class="btn-check workups" name="workup_options" id="workup_opt3" value="MIC - N801 (General)" autocomplete="off">
+                                                                        <label class="btn btn-secondary" for="workup_opt3">MIC - N801 (General)</label>
+
+                                                                        <input type="radio" class="btn-check workups" name="workup_options" id="workup_opt4" value="MIC - GP75 (General)" autocomplete="off">
+                                                                        <label class="btn btn-secondary" for="workup_opt4">MIC - GP75 (General)</label>
+
+                                                                        <input type="radio" class="btn-check workups" name="workup_options" id="workup_opt5" value="MIC - GN99 (General)" autocomplete="off">
+                                                                        <label class="btn btn-secondary" for="workup_opt5">MIC - GN99 (General)</label>
+
+                                                                        <input type="radio" class="btn-check workups" name="workup_options" id="workup_opt6" value="MIC - ST02 (General)" autocomplete="off">
+                                                                        <label class="btn btn-secondary" for="workup_opt6">MIC - ST02 (General)</label>
+
+                                                                        <input type="radio" class="btn-check workups" name="workup_options" id="workup_opt7" value="MALDI AND GN99 (General)" autocomplete="off">
+                                                                        <label class="btn btn-secondary" for="workup_opt7">MALDI AND GN99 (General)</label>
+
+                                                                        <input type="radio" class="btn-check workups" name="workup_options" id="workup_opt8" value="MALDI AND GP75 (General)" autocomplete="off">
+                                                                        <label class="btn btn-secondary" for="workup_opt8">MALDI AND GP75 (General)</label>
+
+                                                                        <input type="radio" class="btn-check workups" name="workup_options" id="workup_opt9" value="MALDI (General)" autocomplete="off">
+                                                                        <label class="btn btn-secondary" for="workup_opt9">MALDI (General)</label>
+
                                                                     </div>
                                                                     
                                                                 </div>
