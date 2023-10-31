@@ -9,23 +9,22 @@ body {
     background-color: #23252A;
 }
 
-.noti_bubble {
+.badge {
     position: absolute;
-    top: 330px;
-    right: 1250px;
     background-color: red;
     color: white;
     font: bold;
     width: 30px;
     height: 30px;
     border-radius: 30px;
-    box-shadow: 1px 1px 1px grey;
     text-align: center;
     font-size: 0.9em;
-    padding: 4px 0px 0px;
+    /* padding: 4px 0px 0px; */
     z-index: 1;
 }
+/* ************************************************************** SCREENING PAGE ************************************************************** */
 
+/******************* SAMPLE CONTAINERS *******************/
 .teal {
     width: 100%;
     background-color: #0e5e5f;
@@ -34,6 +33,19 @@ body {
 .pink {
     width: 100%;
     background-color: #890044;
+}
+
+/********************** SAMPLE DATA **********************/
+.sample_info {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 20%;
+}
+
+.white_barcode_label {
+    background-color: white;
+    border-radius: 5%;
 }
 
 /* black banner */
@@ -45,6 +57,7 @@ body {
     margin-bottom: 1em;;
 }
 
+/********************* PLATE IMAGES *********************/
 /* plate images */
 .plate {
     position: relative;
@@ -56,6 +69,7 @@ body {
     float: right;
 }
 
+/******************* SCREENING BUTTONS *******************/
 .container .screening-buttons {
     padding: 1.5em 0em 0em 0em;
 }
@@ -74,10 +88,30 @@ body {
     background-color: #FF007F;
 }
 
+.action {
+    margin-left: 1em;
+}
+
+.action .btn {
+    height: 50px;
+}
+
+#btn-guide {
+    height: 4em;
+    width: 5em;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-set {
+    padding: 6px;
+}
+
 #btn-panel {
     background-color: #00000033;
     height: 170px;
     padding: 0;
+    margin-bottom: 1em;
     border: 1px solid black;
 }
 
@@ -86,10 +120,6 @@ body {
     color: white;
     text-align: center;
     width: 100%;
-}
-
-.col-3 {
-    padding: 6px;
 }
 
 .screening-buttons .btn {
@@ -103,26 +133,48 @@ body {
     font-size: small;
 }
 
-.action {
-    margin-left: 1em;
-}
-
-#btn-guide {
-    height: 4em;
-    width: 5em;
-    justify-content: center;
-    text-align: center;
-}
-
 #btn-panel .btn {
     font-size: small;
     padding: 0px;
 }
 
-.action .btn {
-    height: 50px;
+/* ************************************************************** READING PAGE ************************************************************** */
+
+.form-check-label {
+    display: block;
+    margin-bottom: 10px;
 }
 
+.form-check-input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border: 2px solid plum;
+    border-radius: 2px;
+    display: inline-grid;
+    place-content: center; 
+  }
+
+  .form-check-input[type="radio"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: scale(0);
+    transform-origin: bottom left;
+    background-color: #fff;
+    clip-path: polygon(13% 50%, 34% 66%, 81% 2%, 100% 18%, 39% 100%, 0 71%);
+}
+
+.form-check-input[type="radio"]:checked::before {
+    transform: scale(1.75);
+}
+.form-check-input[type="radio"]:checked{
+    background-color:   #0075FF;
+    border: 2px solid #0075FF;
+}
+
+/*********** POTENTIAL PATHOGEN IMAGE LIBRARY ***********/
 .PP-library {
     font-size: small;
 }
@@ -152,6 +204,13 @@ body {
     text-align: start;
 }
 
+#isolateComments {
+    color: aqua;
+    font-size: small;
+    text-align: center;
+}
+
+/*************** GENERAL MODAL FORMATTING ***************/
 .modal-header {
     background-color: #00364B;
     color: white;
@@ -170,13 +229,16 @@ body {
     text-align: center;
 }
 
+/*********************** PLATE PIC ***********************/
 .pic {
     width: 80%;
     justify-content: center;
     padding: 0;
     margin: 5% 10% 5% 10%;
+    border-radius: 50%;
 }
 
+/********************* NEW PICKPOINT *********************/
 .context-menu {
     display: none;
     position: absolute;
@@ -213,14 +275,19 @@ body {
     justify-content: center;
 }
 
-#test_selection_buttons {
-    max-height: 200px;
+#workup_selection {
+    max-height: 215px;
     overflow-y: auto;
+    margin-bottom: 50px;
 }
 
-.btn-test {
-    width: 95%;
+#workup_selection .btn {
+    width: 90%;
+    height: 25px;
     margin: 1%;
+    padding: 0;
+    color: white;
+    font-size: small;
 }
 
 #pickpointSummary {
